@@ -6,6 +6,32 @@
 <meta charset="UTF-8">
 <title>/users/signup_form.jsp</title>
 <jsp:include page="../include/resource.jsp"></jsp:include>
+<style>
+	.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 500px;
+  }
+}
+</style>
 </head>
 <body>
 <div class="container">
@@ -38,7 +64,7 @@
 			<input class="form-control" type="email" name="email" id="email"/>
 			<div class="invalid-feedback">이메일 형식을 확인 하세요.</div>
 		</div>
-		<button class="btn btn-outline-primary" type="submit">가입</button>
+		<button class="btn btn-success" type="submit">가입</button>
 	</form>
 </div>
 <script>

@@ -59,8 +59,8 @@
 			<td>${dto.regdate}</td>
 		</tr>
 	</table>
-	<a href="updateform.do">개인 정보 수정</a>
-	<a href="javascript:deleteConfirm()">탈퇴</a>
+	<a class="btn btn-secondary btn-sm" href="updateform.do">개인 정보 수정</a>
+	<a class="btn btn-danger btn-sm" href="javascript:deleteConfirm()">탈퇴</a>
 </div>
 <script>
 	function deleteConfirm(){

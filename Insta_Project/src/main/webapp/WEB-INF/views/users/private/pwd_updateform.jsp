@@ -5,22 +5,51 @@
 <head>
 <meta charset="UTF-8">
 <title>/users/private/pwd_updateform.jsp</title>
+<jsp:include page="../../include/resource.jsp"></jsp:include>
+<style>
+	.container {
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 80px;
+	}
+
+	@media ( min-width : 768px) {
+		.container {
+			width: 500px;
+		}
+	}
+
+	@media ( min-width : 992px) {
+		.container {
+			width: 500px;
+		}
+	}
+
+	@media ( min-width : 1200px) {
+		.container {
+			width: 500px;
+		}
+	}
+</style>
 </head>
 <body>
 <div class="container">
-	<h1>비밀번호 수정 폼</h1>
+	<h2>비밀번호 수정</h2>
+	<br />
 	<form action="pwd_update.do" method="post" id="myForm">
-		<div>
+		<div class="form-group">
 			<label for="pwd">기존 비밀번호</label>
-			<input type="password" name="pwd" id="pwd"/>
+			<input type="password" class="form-control" name="pwd" id="pwd"/>
 		</div>
-		<div>
+		<div class="form-group">
 			<label for="newPwd">새 비밀번호</label>
-			<input type="password" name="newPwd" id="newPwd"/>
+			<input type="password" class="form-control" name="newPwd" id="newPwd"/>
 		</div>
-		<div>
+		<div class="form-group">
 			<label for="newPwd2">새 비밀번호 확인</label>
-			<input type="password" id="newPwd2"/>
+			<input type="password" class="form-control" id="newPwd2"/>
 		</div>
 		<button type="submit">수정하기</button>
 		<button type="reset">리셋</button>

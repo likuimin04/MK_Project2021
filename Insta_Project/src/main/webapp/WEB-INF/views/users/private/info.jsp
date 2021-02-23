@@ -20,7 +20,8 @@
 <body>
 <jsp:include page="../../include/navbar.jsp"></jsp:include>
 <div class="container">
-	<h1>가입 정보 입니다.</h1>
+	<h2>가입 정보</h2>
+	<br />
 	<table class="table table-striped">
 		<colgroup >
 			<col width="150"/>
@@ -59,7 +60,7 @@
 			<td>${dto.regdate}</td>
 		</tr>
 	</table>
-	<a class="btn btn-secondary btn-sm" href="updateform.do">개인 정보 수정</a>
+	<a class="btn btn-success btn-sm" href="updateform.do">개인 정보 수정</a>
 	<a class="btn btn-danger btn-sm" href="javascript:deleteConfirm()">탈퇴</a>
 </div>
 <script>

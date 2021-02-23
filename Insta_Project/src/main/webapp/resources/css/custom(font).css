@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Song+Myung:400');
+
+h1{
+	font-family: 'Song Myung';
+}
+
+h2{
+	font-family: 'Song Myung';
+}
+
+*{
+	font-family: 'Nanum Myeongjo', serif;
+}

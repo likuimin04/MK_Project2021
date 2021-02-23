@@ -60,7 +60,9 @@
 	<%-- 원래 가려던 목적지 정보를 url 이라는 파라미터 명으로 전송될수 있도록 한다. --%>
 	<input type="hidden" name="url" value="${requestScope.url}"/>
 	
-  	<h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+  	<h1 class="h3 mb-3 font-weight-normal">
+  		<img style="width:150px;height:150px" src="${pageContext.request.contextPath }/resources/images/LoginLogo_001.png"/>
+  	</h1>
   	
   	<label for="id" class="sr-only">아이디</label>
   	<input type="text" id="id" name="id" class="form-control" 
@@ -75,7 +77,7 @@
 	      <input type="checkbox" name="isSave" value="yes"> 로그인 정보 저장
 	    </label>
 	</div>
-	<button class="btn btn-lg btn btn-dark btn-block" type="submit">Sign in</button>
+	<button class="btn btn-lg btn btn-info btn-block" type="submit">Sign in</button>
 	<a href="signup_form.do">Sign up</a>
 	<p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
 </form>

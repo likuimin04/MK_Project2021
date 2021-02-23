@@ -9,21 +9,48 @@
 <jsp:include page="../../include/resource.jsp"></jsp:include>
 <style>
 	/* 프로필 이미지를 작은 원형으로 만든다 */
-	#profileImage{
+	#profileImage {
 		width: 50px;
 		height: 50px;
 		border: 1px solid #cecece;
 		border-radius: 50%;
 	}
 	/* 프로필 업로드 폼을 화면에 안보이게 숨긴다 */
-	#profileForm{
+	#profileForm {
 		display: none;
+	}
+
+	.container {
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 80px;
+	}
+
+	@media ( min-width : 768px) {
+		.container {
+			width: 500px;
+		}
+	}
+
+	@media ( min-width : 992px) {
+		.container {
+			width: 500px;
+		}
+	}
+
+	@media ( min-width : 1200px) {
+		.container {
+			width: 500px;
+		}
 	}
 </style>
 </head>
 <body>
 <div class="container">
-	<h1>가입정보 수정 폼 입니다.</h1>
+	<h2>가입정보 수정 </h2>
+	<br />
 	<a id="profileLink" href="javascript:">
 		<c:choose>
 			<c:when test="${empty dto.profile }">
@@ -38,16 +65,16 @@
 		</c:choose>
 	</a>
 	<form action="update.do" method="post">
-		<div>
+		<div class="form-group">
 			<label for="id">아이디</label>
-			<input type="text" id="id" value="${sessionScope.id }" disabled/>
+			<input type="text" class="form-control" id="id" value="${sessionScope.id }" disabled/>
 		</div>
-		<div>
+		<div class="form-group">
 			<label for="email">이메일</label>
-			<input type="text" id="email" name="email" value="${dto.email }"/>
+			<input type="text" class="form-control" id="email" name="email" value="${dto.email }"/>
 		</div>
-		<button type="submit">수정확인</button>
-		<button type="reset">취소</button>
+		<button type="submit" class="btn btn-success">수정확인</button>
+		<button type="reset" class="btn btn-danger">취소</button>
 	</form>
 	<form action="profile_upload.do" method="post" 
 		enctype="multipart/form-data" id="profileForm">

@@ -158,7 +158,6 @@
 </jsp:include>
 <div class="container">
 	<a href="private/upload_form.do">사진 업로드 하러 가기</a><br/>
-	<a href="private/ajax_form.do">사진 업로드 하러 가기2</a>
 	<h1>겔러리 목록 입니다.</h1>
 	<div class="row" id="galleryList">
 		<c:forEach var="tmp" items="${list }">

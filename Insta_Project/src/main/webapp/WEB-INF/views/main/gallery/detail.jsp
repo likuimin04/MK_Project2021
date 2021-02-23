@@ -88,7 +88,7 @@
 		text-align: center; /* 이미지를 좌우로 가운데  정렬 */
 		z-index: 1000;
 		display: none; /* 일단 숨겨 놓기 */
-	}	
+	}
 </style>
 </head>
 <body>

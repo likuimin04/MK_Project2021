@@ -77,8 +77,8 @@
 	      <input type="checkbox" name="isSave" value="yes"> 로그인 정보 저장
 	    </label>
 	</div>
-	<button class="btn btn-lg btn btn-info btn-block" type="submit">Sign in</button>
-	<a href="signup_form.do">Sign up</a>
+	<button class="btn btn-lg btn btn-info btn-block" type="submit">로그인</button>
+	<a href="signup_form.do">회원가입</a>
 	<p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
 </form>
 </body>

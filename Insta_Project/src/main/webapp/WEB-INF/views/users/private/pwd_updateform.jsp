@@ -51,8 +51,8 @@
 			<label for="newPwd2">새 비밀번호 확인</label>
 			<input type="password" class="form-control" id="newPwd2"/>
 		</div>
-		<button type="submit">수정하기</button>
-		<button type="reset">리셋</button>
+		<button class="btn btn-success btn-sm" type="submit">수정하기</button>
+		<button class="btn btn-danger btn-sm" type="reset">리셋</button>
 	</form>
 </div>
 <script>

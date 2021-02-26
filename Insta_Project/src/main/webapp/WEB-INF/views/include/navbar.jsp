@@ -4,7 +4,7 @@
 <style>
 	@import url('https://fonts.googleapis.com/css?family=Yeon+Sung:400');
 	.navbar {
-  		background-color: #610B0B;
+  		background-color: #4F1C1C;
   		font-family:Yeon Sung;
 	}
 	.btn-link{
@@ -48,4 +48,6 @@
 			</c:choose>
 		</div>
 	</div>
+	</div>
 </nav>
+

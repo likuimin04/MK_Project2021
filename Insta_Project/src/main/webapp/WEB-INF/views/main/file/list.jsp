@@ -14,8 +14,8 @@
 	<jsp:param value="file" name="thisPage"/>
 </jsp:include>
 <div class="container">
-	<a href="private/upload_form.do">파일 업로드</a>
-	<h1>파일 목록입니다.</h1>
+	<a class="btn btn-secondary" href="private/upload_form.do" style="float: right">파일 업로드</a>
+	<h1>파일 목록</h1>
 	<table class="table table-striped table-sm">
 		<thead class="thead-dark">
 			<tr>
@@ -68,14 +68,14 @@
 	</div>
 	<hr style="clear:left;"/>
 	<form action="list.do" method="get">
-		<label for="condition">검색조건</label>
+		<label for="condition"><strong>검색조건</strong></label>
 		<select name="condition" id="condition">
 			<option value="title_filename" ${condition eq 'title_filename' ? 'selected' : '' }>제목+파일명</option>
 			<option value="title" ${condition eq 'title' ? 'selected' : '' }>제목</option>
 			<option value="writer" ${condition eq 'writer' ? 'selected' : '' }>작성자</option>
 		</select>
 		<input value="${keyword }" type="text" name="keyword" placeholder="검색어..."/>
-		<button type="submit">검색</button>
+		<button class="btn btn-dark" type="submit">검색</button>
 	</form>
 </div>
 </body>

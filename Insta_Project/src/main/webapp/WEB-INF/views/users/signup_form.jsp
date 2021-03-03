@@ -35,7 +35,7 @@
 </head>
 <body>
 <div class="container">
-	<h1>회원 가입 폼 입니다.</h1>
+	<h1>회원 가입</h1>
 	<!-- 
 		[ novalidate 로 웹브라우저 자체의 검증기능 사용하지 않기 ]
 		<input type="email" />  같은경우 웹브라우저가 직접 개입하기도 한다.
@@ -65,6 +65,7 @@
 			<div class="invalid-feedback">이메일 형식을 확인 하세요.</div>
 		</div>
 		<button class="btn btn-success" type="submit">가입</button>
+		<a class="btn btn-danger" href="${pageContext.request.contextPath }/home.do">취소</a>
 	</form>
 </div>
 <script>

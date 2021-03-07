@@ -148,8 +148,6 @@
 		z-index: 1000;
 		display: none; /* 일단 숨겨 놓기 */
 	}	
-	
-	
 </style>
 </head>
 <body>
@@ -157,8 +155,8 @@
 	<jsp:param value="gallery" name="thisPage"/>
 </jsp:include>
 <div class="container">
-	<a href="private/upload_form.do">사진 업로드 하러 가기</a><br/>
-	<h1>겔러리 목록 입니다.</h1>
+	<a class="btn btn-secondary" href="private/upload_form.do" style="float: right">사진 업로드</a><br/>
+	<h1>겔러리 목록</h1>
 	<div class="row" id="galleryList">
 		<c:forEach var="tmp" items="${list }">
 			<div class="col-6">
@@ -173,8 +171,8 @@
 						<p class="card-text">by <strong>${tmp.writer }</strong></p>
 						<p><small>${tmp.regdate }</small></p>
 					</div>
+					<a class="btn btn-info" href="comment.do?num=${tmp.num}">댓글</a>
 				</div>
-				<a href="comment.do?num=${tmp.num}">댓글</a>
 			</div>
 		</c:forEach>
 	</div>	
